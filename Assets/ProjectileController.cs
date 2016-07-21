@@ -15,8 +15,9 @@ public class ProjectileController : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.E))
         {
-            Instantiate(Projectile, gameObject.transform.position, gameObject.transform.rotation);
-            Projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(ProjectileSpeed, 0);
+            Vector3 vSpawnPos = new Vector3(gameObject.transform.position.x + 0.1f, gameObject.transform.position.y, gameObject.transform.position.z);
+            GameObject Clone = Instantiate(Projectile, vSpawnPos, gameObject.transform.rotation) as GameObject;
+            Clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(ProjectileSpeed, 0));
         }
 
 	
