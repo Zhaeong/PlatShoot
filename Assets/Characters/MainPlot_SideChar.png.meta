@@ -1,12 +1,15 @@
 fileFormatVersion: 2
 guid: 742ed17ceaf18b44a83140462072557c
-timeCreated: 1469137948
-licenseType: Pro
+timeCreated: 1471217089
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: MainPlot_SideChar_0
     21300002: MainPlot_SideChar_1
     21300004: MainPlot_SideChar_2
+    21300006: MainPlot_SideChar_3
+    21300008: MainPlot_SideChar_4
+    21300010: MainPlot_SideChar_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -115,6 +118,63 @@ TextureImporter:
         - {x: 24, y: -14}
         - {x: 24, y: 14}
         - {x: 14, y: 22}
+    - name: MainPlot_SideChar_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 579
+        width: 40
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 43}
+        - {x: -18, y: 40}
+        - {x: -18, y: -12}
+        - {x: -13, y: -43}
+        - {x: 13, y: -43}
+        - {x: 20, y: -34}
+        - {x: 20, y: 38}
+        - {x: 15, y: 43}
+    - name: MainPlot_SideChar_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 579
+        width: 41
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 43}
+        - {x: -18.5, y: 39}
+        - {x: -18.5, y: -9}
+        - {x: -17.5, y: -21}
+        - {x: -9.5, y: -43}
+        - {x: 7.5, y: -43}
+        - {x: 19.5, y: -31}
+        - {x: 19.5, y: 39}
+        - {x: 15.5, y: 43}
+    - name: MainPlot_SideChar_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 579
+        width: 38
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 43.5}
+        - {x: -19, y: 34.5}
+        - {x: -19, y: -27.5}
+        - {x: -13, y: -43.5}
+        - {x: 18, y: -43.5}
+        - {x: 18, y: 41.5}
+        - {x: 9, y: 43.5}
     outline: []
   spritePackingTag: 
   userData: 
