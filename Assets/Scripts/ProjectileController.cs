@@ -17,7 +17,7 @@ public class ProjectileController : MonoBehaviour {
         Vector2 force = new Vector2(ProjectileSpeed, 0);
         Vector3 newForce = transform.localRotation * force;
 
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) || Input.GetMouseButtonDown(0)) 
         {
             //Vector3 vSpawnPos =  new Vector3(gameObject.transform.localPosition.x + 0.1f, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z);
 
