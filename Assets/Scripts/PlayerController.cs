@@ -4,7 +4,6 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 
-    private Rigidbody2D curRigidbody;
     [HideInInspector]
     public bool facingRight = true;         // For determining which way the player is currently facing.
     [HideInInspector]
@@ -20,12 +19,6 @@ public class PlayerController : MonoBehaviour
         groundCheck = transform.Find("groundCheck");
     }
 
-    // Use this for initialization
-    void Start()
-    {
-        curRigidbody = gameObject.GetComponent<Rigidbody2D>();
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -36,7 +29,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && grounded)
         {
             jump = true;
-            Debug.Log("Jump pressed" + grounded);
+            //Debug.Log("Jump pressed" + grounded);
         }
 
     }
