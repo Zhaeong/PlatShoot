@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 742ed17ceaf18b44a83140462072557c
-timeCreated: 1471217089
+timeCreated: 1471823303
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,7 @@ TextureImporter:
     21300006: MainPlot_SideChar_3
     21300008: MainPlot_SideChar_4
     21300010: MainPlot_SideChar_5
+    21300012: MainPlot_SideChar_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -175,6 +176,23 @@ TextureImporter:
         - {x: 18, y: -43.5}
         - {x: 18, y: 41.5}
         - {x: 9, y: 43.5}
+    - name: MainPlot_SideChar_6
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 676
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 22}
+        - {x: -16, y: -13}
+        - {x: -10, y: -22}
+        - {x: 15, y: -22}
+        - {x: 16, y: -19}
+        - {x: 16, y: 22}
     outline: []
   spritePackingTag: 
   userData: 

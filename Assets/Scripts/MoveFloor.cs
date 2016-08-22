@@ -4,23 +4,15 @@ using System.Collections;
 public class MoveFloor : MonoBehaviour
 {
     public float speed;
+    public float period;
+    public Vector2 dir;
 
     bool movePos;
-    Vector3 dir;
     float timer;
 
     void Start()
     {
         timer = 0f;
-
-        if (gameObject.name == "Moving Floor")
-        {
-            dir = Vector2.left;
-
-        } else
-        {
-            dir = Vector2.up;
-        }
     }
 
     // Update is called once per frame
@@ -28,7 +20,7 @@ public class MoveFloor : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= 5f)
+        if (timer >= period)
         {
             dir = -dir;
             timer = 0f;
@@ -39,7 +31,7 @@ public class MoveFloor : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Character"))
+        if (other.gameObject.CompareTag("Character")|| other.gameObject.CompareTag("Player"))
         {
             other.transform.parent = transform;
         }
@@ -47,7 +39,7 @@ public class MoveFloor : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Character"))
+        if (other.gameObject.CompareTag("Character")||other.gameObject.CompareTag("Player"))
         {
             other.transform.parent = null;
         }
